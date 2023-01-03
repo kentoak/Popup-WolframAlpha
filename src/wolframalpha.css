@@ -1,0 +1,117 @@
+body {
+    margin: 0px;
+}
+
+button {
+    background-image: url(images/cancel.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+button span {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 24px;
+    border: 1px solid #ddd;
+}
+
+.wa_toolbar_icon {
+    width: 28px;
+    height: 28px;
+    float: right;
+    position: relative;
+    top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.wa_toolbar_icon:hover {
+    background: #E1E1E2;
+}
+
+.wa_toolbar_icon img {
+    width: 20px;
+}
+
+/* ==========================================================================
+   Toolbar container
+   ========================================================================== */
+.wa_toolbar_container {
+    background: #fff;
+    width: 596px;
+    height: 86px;
+    float: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.22);
+    border-radius: 3px;
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: 0.15s all ease;
+}
+
+.wa_toolbar_container_active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.wa_toolbar_logo {
+    margin-left: 18px;
+}
+
+.wa_toolbar_input_field {
+    width: 324px;
+    height: 30px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #FF9339;
+    box-shadow: 0px 0px 0px 2px #FFC230;
+    border-radius: 4px;
+}
+
+.wa_toolbar_input_field input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    color: #000;
+    margin-left: 12px;
+    font-size: 16px;
+    border: none;
+}
+
+.wa_toolbar_input_field input[type=text]:focus {
+    border: none !important;
+    outline: 0;
+}
+
+.wa_toolbar_compute_button {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 28px;
+    top: 35px;
+}
+
+#submit-btn{
+    background: url('../images/wa_toolbar_compute.svg');
+}
+#submit-btn:hover{
+    background: url('../images/wa_toolbar_compute_hover.svg');
+    cursor: pointer;
+}
+
+#query {
+    width: 250px;
+}
+
+#query-form {
+    position: relative;
+}
