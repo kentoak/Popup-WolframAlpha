@@ -1,1 +1,2 @@
 # Popup-WolframAlpha
+Alt+WでWolframAlphaをpopupで呼び出すChrome拡張
